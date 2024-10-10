@@ -1,0 +1,23 @@
+services:
+  backend_db:
+    container_name: backend_db
+    image: postgres:14.3-alpine
+    restart: unless-stopped
+    volumes:
+      - ./backend_db:/var/lib/postgresql/data
+    env_file:
+      - .env
+
+  backend_api:
+    container_name: backend_api
+    build: .
+    restart: unless-stopped
+    depends_on:
+      - backend_db
+    volumes:
+      - .:/app
+    ports:
+      - 9062:80
+    command: ["python", "/app/backend/manage.py", "runserver", "0:80"]
+    env_file:
+      - .env
