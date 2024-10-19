@@ -13,6 +13,6 @@ todo
 venv
 static
 backend_db
-backend/celerybeat-schedule
-backend/celerybeat.pid
-backend/static
+project/celerybeat-schedule
+project/celerybeat.pid
+project/static

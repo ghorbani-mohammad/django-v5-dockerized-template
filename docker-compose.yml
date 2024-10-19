@@ -18,6 +18,6 @@ services:
       - .:/app
     ports:
       - 9062:80
-    command: ["python", "/app/backend/manage.py", "runserver", "0:80"]
+    command: ["python", "/app/project/manage.py", "runserver", "0:80"]
     env_file:
       - .env

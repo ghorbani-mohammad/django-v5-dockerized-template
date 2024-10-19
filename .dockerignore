@@ -12,7 +12,7 @@ db.sqlite3
 docker-compose.yml
 docker-compose-pro.yml
 static
-backend/static
-backend/celerybeat-schedule
-backend/celerybeat.pid
+project/static
+project/celerybeat-schedule
+project/celerybeat.pid
 *.sql.gz

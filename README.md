@@ -2,7 +2,7 @@
 
 - Server: Azure
 - Port: 9062
-- Project path: `/var/www/backend/`
+- Project path: `/var/www/project/`
 - Doc Link:
 - Nginx log files:
     ```
@@ -10,4 +10,4 @@
     error:  /var/log/nginx/api-backend_error.log
     ```
 - Links:
-    * [backend.com](https://backend.com)
+    * [project.com](https://project.com)

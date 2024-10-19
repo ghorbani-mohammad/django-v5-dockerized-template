@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PROJECT_NAME='backend'
+PROJECT_NAME='project'
 SERVER_NAME='Azure'
-PROJECT_PATH='/var/www/backend/'
+PROJECT_PATH='/var/www/project/'
 
 API_CONTAINER_NAME=${PROJECT_NAME}'_api'
 DB_CONTAINER_NAME=${PROJECT_NAME}'_db'
@@ -59,7 +59,7 @@ function create_admin_user() {
 }
 
 function issue_https_certificate() {
-    sudo certbot --nginx certonly -d backend.com
+    sudo certbot --nginx certonly -d project.com
     sudo ln -s ${PROJECT_PATH}${NGINX_FILE} /etc/nginx/sites-enabled/${NGINX_FILE}
     sudo service nginx restart
 }

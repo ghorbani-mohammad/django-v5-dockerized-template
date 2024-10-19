@@ -24,8 +24,8 @@ services:
   # backend_celery:
   #   container_name: backend_celery
   #   build: .
-  #   working_dir: /app/backend
-  #   command: ["celery", "-A", "backend", "worker", "-l", "info"]
+  #   working_dir: /app/project
+  #   command: ["celery", "-A", "project", "worker", "-l", "info"]
   #   restart: unless-stopped
   #   volumes:
   #     - .:/app
@@ -38,8 +38,8 @@ services:
   # backend_beat:
   #   container_name: backend_beat
   #   build: .
-  #   working_dir: /app/backend
-  #   command: ["celery", "-A", "backend", "beat", "-l", "info"]
+  #   working_dir: /app/project
+  #   command: ["celery", "-A", "project", "beat", "-l", "info"]
   #   restart: unless-stopped
   #   volumes:
   #     - .:/app
