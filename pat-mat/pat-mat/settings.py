@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+cmd#(moufeqga9en_!6ww84pr7-ll=0&mnu+9!-*1*g191l((
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = ["project.com"]
+ALLOWED_HOSTS = ["pat-mat.6thsolution.com"]
 
 
 # Application definition
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'pat-mat.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'pat-mat.wsgi.application'
 
 
 # Database
@@ -80,7 +80,7 @@ DATABASES = {
         "NAME": "postgres",
         "USER": env.str("POSTGRES_USERNAME"),
         "PASSWORD": env.str("POSTGRES_PASSWORD"),
-        "HOST": "backend_db",
+        "HOST": "pat-mat_db",
         "PORT": "5432",
     }
 }

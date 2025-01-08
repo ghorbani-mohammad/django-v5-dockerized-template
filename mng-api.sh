@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PROJECT_NAME='project'
+PROJECT_NAME='pat-mat'
 SERVER_NAME='Azure'
-PROJECT_PATH='/var/www/project/'
+PROJECT_PATH='/var/www/pat-mat/'
 
 API_CONTAINER_NAME=${PROJECT_NAME}'_api'
 DB_CONTAINER_NAME=${PROJECT_NAME}'_db'
