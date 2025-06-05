@@ -21,8 +21,8 @@ services:
     env_file:
       - .env
 
-  # backend_celery:
-  #   container_name: backend_celery
+  # backend_worker:
+  #   container_name: backend_worker
   #   build: .
   #   working_dir: /app/pat-mat
   #   command: ["celery", "-A", "pat-mat", "worker", "-l", "info"]
